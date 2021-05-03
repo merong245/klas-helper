@@ -33,7 +33,7 @@ export interface GPA {
 
 export const checkMajor = (classification: Classification): boolean => ['전필', '전선'].includes(classification);
 export const checkPass = (grade: Grade): boolean => ['A+', 'A0', 'B+', 'B0', 'C+', 'C0', 'D+', 'D0', 'P'].includes(grade);
-export const checkIncludeF = (grade: Grade): boolean => ['A+', 'A0', 'B+', 'B0', 'C+', 'C0', 'D+', 'D0', 'F', 'NP'].includes(grade);
+export const checkIncludeF = (grade: Grade): boolean => ['A+', 'A0', 'B+', 'B0', 'C+', 'C0', 'D+', 'D0', 'F'].includes(grade);
 export const checkExcludeF = (grade: Grade): boolean => ['A+', 'A0', 'B+', 'B0', 'C+', 'C0', 'D+', 'D0'].includes(grade);
 
 export const gradeToScore = (grade: Grade): number => {
